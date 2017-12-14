@@ -7,6 +7,6 @@ class Index
 {
     public function index()
     {
-        return Response::create(Url::build('/admin'), 'redirect');
+        echo 'kskskskkskksks';die;
     }
 }

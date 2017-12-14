@@ -10,12 +10,16 @@ use app\admin\Controller;
 use think\Loader;
 use think\Session;
 use think\Db;
-
+use think\Config;
+\think\Loader::import('controller/Jump', TRAIT_PATH, EXT);
 class Index extends Controller
 {
-
+    use \traits\controller\Jump;
     public function index()
     {
+        if (!Session::has(Config::get('rbac.user_auth_key'))) {
+            $this->redirect('/pub/login');
+        }
         // 读取数据库模块列表生成菜单项
         $nodes = Loader::model('AdminNode', 'logic')->getMenu();
         // 节点转为树

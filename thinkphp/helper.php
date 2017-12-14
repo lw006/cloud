@@ -277,7 +277,7 @@ if (!function_exists('url')) {
      * @param bool|string   $domain 域名
      * @return string
      */
-    function url($url = '', $vars = '', $suffix = true, $domain = false)
+    function url($url = '', $vars = '', $suffix = false, $domain = false)
     {
         return Url::build($url, $vars, $suffix, $domain);
     }

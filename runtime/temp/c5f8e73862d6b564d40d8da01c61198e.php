@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:78:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\admin_node\index.html";i:1494314881;s:75:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\template\base.html";i:1494314881;s:86:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\template\javascript_vars.html";i:1494314881;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:78:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\admin_node\index.html";i:1513245177;s:75:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\template\base.html";i:1494314881;s:86:"E:\Study\cloud.cnfol.hk\public/../application/admin\view\template\javascript_vars.html";i:1494314881;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -67,7 +67,7 @@
 
 <div class="pos-f tp-page-aside">
     <div class="panel panel-primary tp-panel tp-panel-module">
-        <div class="panel-header">模块</div>
+        <div class="panel-header">应用</div>
         <div class="panel-body tp-box-list">
             <ul id="module-list">
                 <?php if(is_array($modules) || $modules instanceof \think\Collection || $modules instanceof \think\Paginator): if( count($modules)==0 ) : echo "" ;else: foreach($modules as $key=>$module): ?>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="panel panel-primary tp-panel tp-panel-group">
-        <div class="panel-header">分组</div>
+        <div class="panel-header">菜单分组</div>
         <div class="panel-body tp-box-list">
             <ul id="group-list">
                 <li data-group-id="0"><a href="javascript:;" class="list-select"><i class="Hui-iconfont"></i> 未分组</a></li>

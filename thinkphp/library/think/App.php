@@ -77,7 +77,13 @@ class App
                 BIND_MODULE && Route::bind(BIND_MODULE);
             } elseif ($config['auto_bind_module']) {
                 // 入口自动绑定
-                $name = pathinfo($request->baseFile(), PATHINFO_FILENAME);
+                /**********************        原框架代码此处我认为有误     ******************/
+                //$name = pathinfo($request->baseFile(), PATHINFO_FILENAME);
+                //if ($name && 'index' != $name && is_dir(APP_PATH . $name)) {
+                //    Route::bind($name);
+                //}
+                /**********************        以下为修改之后的版本         ******************/
+                $name = $config['auto_bind_module'];
                 if ($name && 'index' != $name && is_dir(APP_PATH . $name)) {
                     Route::bind($name);
                 }
