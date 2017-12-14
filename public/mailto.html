@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mailto的使用</title>
+    <link href="http://www.bootcss.com/p/layoutit/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="http://www.bootcss.com/p/layoutit/css/layoutit.css" rel="stylesheet">
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/jquery-2.0.0.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/jquery.htmlClean.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/ckeditor/config.js"></script>
+    <script type="text/javascript" src="http://www.bootcss.com/p/layoutit/js/scripts.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span4">
+        </div>
+        <div class="span4">
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="inputName">姓名</label>
+                    <div class="controls">
+                        <input id="inputName" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputCompany">公司</label>
+                    <div class="controls">
+                        <input id="inputCompany" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputTel">手机</label>
+                    <div class="controls">
+                        <input id="inputTel" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="button" class="btn" onclick="sendMail()">登陆</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span4">
+        </div>
+    </div>
+</div>
+<script>
+    function sendMail() {
+        var _name = $('#inputName').val();
+        var _company = $('#inputCompany').val();
+        var _tel = $('#inputTel').val();
+        var url = "mailto: liuwei@cnfol.net?cc=xiongxing@cnfol.net&bcc=qinxw@cnfol.net&subject=测试邮件&";
+        url += "body="+_name+"<br>"+_company+"<br>"+_tel;
+        url = encodeURI(url);
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>
