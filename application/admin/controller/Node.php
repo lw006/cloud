@@ -12,7 +12,7 @@ use app\admin\Controller;
 use think\Db;
 use think\Loader;
 
-class AdminNode extends Controller
+class Node extends Controller
 {
     use \app\admin\traits\controller\Controller {
         \app\admin\traits\controller\Controller::index as indexOld;

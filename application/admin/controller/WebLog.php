@@ -1,12 +1,4 @@
 <?php
-/**
- * tpAdmin [a web admin based ThinkPHP5]
- *
- * @author    yuan1994 <tianpian0805@gmail.com>
- * @link      http://tpadmin.yuan1994.com/
- * @copyright 2016 yuan1994 all rights reserved.
- * @license   http://www.apache.org/licenses/LICENSE-2.0
- */
 
 //------------------------
 // 网站操作日志
@@ -49,7 +41,7 @@ class WebLog extends Controller
         // 分页查询
         $list = $model->alias('w')->field($field)
             ->join([
-                ['__ADMIN_USER__ u', 'u.id=w.uid', 'LEFT'],
+                ['__USER__ u', 'u.id=w.uid', 'LEFT'],
                 ['__NODE_MAP__ m', 'm.method=w.method AND m.module=w.module AND m.controller=w.controller AND m.action=w.action', 'LEFT'],
                 ['__NODE_MAP__ md', 'md.method="ALL" AND md.module=w.module AND md.controller=w.controller AND md.action=w.action', 'LEFT'],
             ])
@@ -99,7 +91,7 @@ class WebLog extends Controller
         // 查询
         $item = Loader::model('WebLog')->alias('w')->field($field)
             ->join([
-                ['__ADMIN_USER__ u', 'u.id=w.uid', 'LEFT'],
+                ['__USER__ u', 'u.id=w.uid', 'LEFT'],
                 ['__NODE_MAP__ m', 'm.method=w.method AND m.module=w.module AND m.controller=w.controller AND m.action=w.action', 'LEFT'],
                 ['__NODE_MAP__ md', 'md.method="ALL" AND md.module=w.module AND md.controller=w.controller AND md.action=w.action', 'LEFT'],
             ])

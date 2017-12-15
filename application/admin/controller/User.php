@@ -1,12 +1,4 @@
 <?php
-/**
- * tpAdmin [a web admin based ThinkPHP5]
- *
- * @author yuan1994 <tianpian0805@gmail.com>
- * @link http://tpadmin.yuan1994.com/
- * @copyright 2016 yuan1994 all rights reserved.
- * @license http://www.apache.org/licenses/LICENSE-2.0
- */
 
 //------------------------
 // 用户控制器
@@ -20,7 +12,7 @@ use app\admin\Controller;
 use think\Exception;
 use think\Loader;
 
-class AdminUser extends Controller
+class User extends Controller
 {
     use \app\admin\traits\controller\Controller;
 
@@ -61,7 +53,7 @@ class AdminUser extends Controller
             if (!$password) {
                 return ajax_return_adv_error("密码不能为空");
             }
-            if (false === Loader::model('AdminUser')->updatePassword($id, $password)) {
+            if (false === Loader::model('User')->updatePassword($id, $password)) {
                 return ajax_return_adv_error("密码修改失败");
             }
             return ajax_return_adv("密码已修改为{$password}", '');

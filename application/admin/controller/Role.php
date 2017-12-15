@@ -1,12 +1,4 @@
 <?php
-/**
- * tpAdmin [a web admin based ThinkPHP5]
- *
- * @author yuan1994 <tianpian0805@gmail.com>
- * @link http://tpadmin.yuan1994.com/
- * @copyright 2016 yuan1994 all rights reserved.
- * @license http://www.apache.org/licenses/LICENSE-2.0
- */
 
 //------------------------
 // 角色控制器
@@ -21,7 +13,7 @@ use think\Exception;
 use think\Db;
 use think\Loader;
 
-class AdminRole extends Controller
+class Role extends Controller
 {
     use \app\admin\traits\controller\Controller;
 

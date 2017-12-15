@@ -21,7 +21,7 @@ class Index extends Controller
             $this->redirect('/pub/login');
         }
         // 读取数据库模块列表生成菜单项
-        $nodes = Loader::model('AdminNode', 'logic')->getMenu();
+        $nodes = Loader::model('Node', 'logic')->getMenu();
         // 节点转为树
         $tree_node = list_to_tree($nodes);
 
@@ -45,7 +45,7 @@ class Index extends Controller
         if (!$groups_id) {
             exception("没有权限");
         }
-        $groups = Db::name("AdminGroup")->where(['id' => ['in', $groups_id], 'status' => "1"])->order("sort asc,id asc")->field('id,name,icon')->select();
+        $groups = Db::name("Group")->where(['id' => ['in', $groups_id], 'status' => "1"])->order("sort asc,id asc")->field('id,name,icon')->select();
 
         $this->view->assign('groups', $groups);
         $this->view->assign('menu', $menu);
@@ -75,7 +75,7 @@ class Index extends Controller
         $this->view->assign("current_login_loc", implode(" ", $current_login_loc));
 
         // 查询个人信息
-        $info = Db::name("AdminUser")->where("id", UID)->find();
+        $info = Db::name("User")->where("id", UID)->find();
         $this->view->assign("info", $info);
 
         return $this->view->fetch();

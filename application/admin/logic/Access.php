@@ -1,19 +1,11 @@
 <?php
-/**
- * tpAdmin [a web admin based ThinkPHP5]
- *
- * @author yuan1994 <tianpian0805@gmail.com>
- * @link http://tpadmin.yuan1994.com/
- * @copyright 2016 yuan1994 all rights reserved.
- * @license http://www.apache.org/licenses/LICENSE-2.0
- */
 
 namespace app\admin\logic;
 
 use think\Db;
 use think\Exception;
 
-class AdminAccess
+class Access
 {
     /**
      * 写入权限
@@ -25,7 +17,7 @@ class AdminAccess
     {
         Db::startTrans();
         try {
-            $db_access = Db::name("AdminAccess");
+            $db_access = Db::name("access");
             //删除之前的权限分配
             $db_access->where("role_id", $role_id)->delete();
             //写入新的权限分配

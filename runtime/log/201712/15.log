@@ -1,0 +1,717 @@
+[ 2017-12-15T14:40:14+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.216013s][吞吐率：4.63req/s] [内存消耗：7,060.34kb] [文件加载：74]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.104006s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'tpadmin'[E:\Study\cloud.cnfol.hk\thinkphp\library\think\db\Connection.php:300]
+
+---------------------------------------------------------------
+[ 2017-12-15T14:41:42+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：7,071.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.026002s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1513320102) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T14:41:42+08:00 ] ::1 ::1 GET /pub/login.html
+[ log ] cloud.cnfol.hk/pub/login.html [运行时间：0.237014s][吞吐率：4.22req/s] [内存消耗：7,019.14kb] [文件加载：69]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ E:\Study\cloud.cnfol.hk\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] E:\Study\cloud.cnfol.hk\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.049003s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1513320102) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T14:41:42+08:00 ] ::1 ::1 GET /captcha.html
+[ log ] cloud.cnfol.hk/captcha.html [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,313.30kb] [文件加载：41]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\Study\cloud.cnfol.hk\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-15T14:41:51+08:00 ] ::1 ::1 POST /pub/checklogin.html
+[ log ] cloud.cnfol.hk/pub/checklogin.html [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：7,106.25kb] [文件加载：71]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'content-length' => '51',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://cloud.cnfol.hk',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'fueu',
+  'online' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ E:\Study\cloud.cnfol.hk\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud.admin_user' doesn't exist[E:\Study\cloud.cnfol.hk\thinkphp\library\think\db\connector\Mysql.php:65]
+
+---------------------------------------------------------------
+[ 2017-12-15T14:56:32+08:00 ] ::1 ::1 POST /pub/checklogin.html
+[ log ] cloud.cnfol.hk/pub/checklogin.html [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：6,980.70kb] [文件加载：68]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'content-length' => '51',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://cloud.cnfol.hk',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'fueu',
+  'online' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ E:\Study\cloud.cnfol.hk\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:4:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"fueu\";s:6:\"online\";s:1:\"1\";}' , 1513320992) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T14:56:32+08:00 ] ::1 ::1 GET /captcha.html?t=1513320992781
+[ log ] cloud.cnfol.hk/captcha.html?t=1513320992781 [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：2,313.41kb] [文件加载：41]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  't' => '1513320992781',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\Study\cloud.cnfol.hk\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-15T15:02:11+08:00 ] ::1 ::1 GET /captcha.html?t=1513321331903
+[ log ] cloud.cnfol.hk/captcha.html?t=1513321331903 [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：2,313.46kb] [文件加载：41]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  't' => '1513321331903',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\Study\cloud.cnfol.hk\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-15T15:02:16+08:00 ] ::1 ::1 POST /pub/checklogin.html
+[ log ] cloud.cnfol.hk/pub/checklogin.html [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：7,139.73kb] [文件加载：71]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'content-length' => '51',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://cloud.cnfol.hk',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://cloud.cnfol.hk/pub/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'dwdr',
+  'online' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ E:\Study\cloud.cnfol.hk\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud.admin_user' doesn't exist[E:\Study\cloud.cnfol.hk\thinkphp\library\think\db\connector\Mysql.php:65]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:03:40+08:00 ] ::1 ::1 GET /pub/login.html
+[ log ] cloud.cnfol.hk/pub/login.html [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：6,875.50kb] [文件加载：67]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009000s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ E:\Study\cloud.cnfol.hk\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1513321420) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:03:40+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：5,888.45kb] [文件加载：68]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\Study\cloud.cnfol.hk\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类不存在:app\common\logic\AdminNode[E:\Study\cloud.cnfol.hk\thinkphp\library\think\Loader.php:390]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:03:46+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：5,888.63kb] [文件加载：68]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\Study\cloud.cnfol.hk\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类不存在:app\common\logic\AdminNode[E:\Study\cloud.cnfol.hk\thinkphp\library\think\Loader.php:390]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:04:40+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：7,143.53kb] [文件加载：73]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007001s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\Study\cloud.cnfol.hk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `node` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000000s ]
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud.admin_group' doesn't exist[E:\Study\cloud.cnfol.hk\thinkphp\library\think\db\connector\Mysql.php:65]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:05:26+08:00 ] ::1 ::1 GET /
+[ log ] cloud.cnfol.hk/ [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：7,283.77kb] [文件加载：73]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\Study\cloud.cnfol.hk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\Study\cloud.cnfol.hk\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ E:\Study\cloud.cnfol.hk\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.003000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `node` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `group` WHERE  `id` IN (1,2)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1513321526) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:05:26+08:00 ] ::1 ::1 GET /index/welcome.html
+[ log ] cloud.cnfol.hk/index/welcome.html [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：7,185.78kb] [文件加载：71]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://cloud.cnfol.hk/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ E:\Study\cloud.cnfol.hk\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\Study\cloud.cnfol.hk\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.003000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cloud;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_log_all` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 7' , 'Chrome(63.0.3239.84)' , 'http://cloud.cnfol.hk/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1513321526) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-12-15T15:06:36+08:00 ] ::1 ::1 GET /admin_group/index
+[ log ] cloud.cnfol.hk/admin_group/index [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：5,214.95kb] [文件加载：60]
+[ info ] [ LANG ] E:\Study\cloud.cnfol.hk\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'cloud.cnfol.hk',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://cloud.cnfol.hk/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ea30a7d28516-09527a0e0333ea-3a3e5f04-1fa400-15ea30a7d2948c; pgv_pvi=9251454976; _qddaz=QD.nbc5g8.6sdlia.j7u1zqry; Hm_lvt_daba01831cad8b044d7f3442e62f935f=1512698135,1512712327,1512956652,1513130026; logonlang=1; Huiskin=green; PHPSESSID=ko5qm4efk851iv0cbc2cp10rq0; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

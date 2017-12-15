@@ -6,7 +6,7 @@ use think\Db;
 use think\Config;
 use think\Loader;
 
-class AdminNode
+class Node
 {
     /**
      * 首页列表生成菜单项
@@ -14,14 +14,14 @@ class AdminNode
     public function getMenu()
     {
         if (ADMIN) {
-            $nodes = Db::name("AdminNode")->where("status=1 AND group_id > 0")->field("id,pid,name,group_id,title,type")->select();
+            $nodes = Db::name("node")->where("status=1 AND group_id > 0")->field("id,pid,name,group_id,title,type")->select();
         } else {
             $prefix = Config::get("database.prefix");
             $sql = "SELECT node.id,node.name,node.pid,node.group_id,node.title,node.type from "
-                . "{$prefix}admin_role AS role,"
-                . "{$prefix}admin_role_user AS user,"
-                . "{$prefix}admin_access AS access ,"
-                . "{$prefix}admin_node AS node "
+                . "{$prefix}role AS role,"
+                . "{$prefix}role_user AS user,"
+                . "{$prefix}access AS access ,"
+                . "{$prefix}node AS node "
                 . "WHERE user.user_id='" . UID . "' "
                 . "AND user.role_id=role.id "
                 . "AND access.role_id=role.id "
@@ -49,11 +49,11 @@ class AdminNode
     {
         $error = [];
         $insert_all = [];
-        $validate = Loader::validate("AdminNode");
+        $validate = Loader::validate("Node");
 
         // 有选择模板
         if ($node_template) {
-            $nodes = Db::name("AdminNodeLoad")->where("id", "in", $node_template)->field("title,name")->select();
+            $nodes = Db::name("NodeLoad")->where("id", "in", $node_template)->field("title,name")->select();
             foreach ($nodes as $node) {
                 $insert = array_merge($data, $node);
                 // 数据校验
@@ -78,7 +78,7 @@ class AdminNode
         }
         //TODO 对两种方式产生重复数据的校验
         if ($insert_all) {
-            Db::name("AdminNode")->insertAll($insert_all);
+            Db::name("Node")->insertAll($insert_all);
         }
 
         return $error;
